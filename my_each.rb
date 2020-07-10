@@ -1,3 +1,5 @@
+require_relative
+
 class Array
   def my_each
     if block_given?
