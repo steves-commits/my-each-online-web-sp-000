@@ -1,9 +1,18 @@
-def my_each # put argument(s) here
-  # code here
-  
-  collection = [1, 2, 3, 4]
-  
-  my_each(collection) do |i|
-    puts i
-  end
+function iterativeLog(array) {
+  array.forEach((el, i) => {
+    console.log(`${i}: ${el}`)
+  })
+}
+
+function iterate(callback) {
+  const cats = ["Garfield", "Bianca", "Petunia"]
+
+  cats.forEach(callback)
+
+  return cats
+}
+
+function doToArray(array, callback) {
+  array.forEach(callback)
+}
   
